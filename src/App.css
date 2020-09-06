@@ -1,0 +1,89 @@
+.main {
+  display: grid;
+  grid-template-areas: "header" "body" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  background: linear-gradient(white, rgb(56, 56, 85));
+  color: rgb(26, 22, 22);
+}
+header {
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headLink {
+  color: rgb(51, 53, 52);
+  text-decoration: none;
+}
+.doctorLogin {
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: -50px;
+  cursor: pointer;
+  color: rgb(51, 53, 52);
+}
+.docLogInForm,
+.patientForm {
+  border: black 1px solid;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: 600px;
+  margin-top: 30px;
+}
+.patientForm {
+  margin-top: -300px;
+}
+.DocLogInButton {
+  background-color: teal;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.products {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 10px;
+}
+.doc-image,
+.doc-name {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.doc-image {
+  border-radius: 150px;
+}
+.doc-name,
+.doc-brand,
+.doc-rating {
+  text-align: center;
+  margin-top: 5px;
+}
+.patient-detail-head {
+  border: 0.5px solid black;
+  padding: 5px;
+  border-collapse: collapse;
+  width: 30px;
+  width: 200px;
+}
+.patient-lists {
+  margin-left: 50px;
+}
